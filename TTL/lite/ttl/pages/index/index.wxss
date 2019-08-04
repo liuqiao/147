@@ -1,0 +1,11 @@
+/**index.wxss**/
+
+.body-view {
+  display: flex;
+  width: 100%;
+}
+
+.txt {
+  width: 100%;
+  text-align: center;
+}
