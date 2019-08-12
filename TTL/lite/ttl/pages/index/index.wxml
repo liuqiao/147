@@ -1,3 +1,17 @@
 <view class="body-view">
   <text class="txt">问道</text>
+  
 </view>
+<button>sad</button>
+  <radio-group>
+    <radio>a</radio>
+    <radio>b</radio>
+    <radio>c</radio>
+    <radio>d</radio>
+    <radio>f</radio>
+  </radio-group>
+  <checkbox-group>
+    <checkbox>aa</checkbox>
+    <checkbox>bb</checkbox>
+    <checkbox>cc</checkbox>
+  </checkbox-group>
