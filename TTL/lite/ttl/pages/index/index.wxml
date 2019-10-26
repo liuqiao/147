@@ -1,17 +1,10 @@
-<view class="body-view">
-  <text class="txt">问道</text>
-  
-</view>
-<button>sad</button>
-  <radio-group>
-    <radio>a</radio>
-    <radio>b</radio>
-    <radio>c</radio>
-    <radio>d</radio>
-    <radio>f</radio>
-  </radio-group>
-  <checkbox-group>
-    <checkbox>aa</checkbox>
-    <checkbox>bb</checkbox>
-    <checkbox>cc</checkbox>
-  </checkbox-group>
+<button bindtap='houduanButton1'>点击发起请求</button>
+<view wx:for="{{list}}">
+    姓名：{{item}}
+  </view>
+
+<input type="text" class="houduanTab_input" placeholder="请输入你要查询的内容" bindinput='houduanTab_input'></input>
+  <button bindtap='houduanButton2'>查询</button>
+  <view wx:if="{{message!=''}}">
+    {{message}}
+  </view>

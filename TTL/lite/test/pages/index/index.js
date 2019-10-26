@@ -22,7 +22,7 @@ Page({
       },
       success: function (res) {
         console.log(res.data)//打印到控制台
-        var list = res.data.list;
+        var list = res.data;
         if (list == null) {
           var toastText = '数据获取失败';
           wx.showToast({
@@ -48,7 +48,7 @@ Page({
   houduanButton2: function () {
     var that = this;
     wx.request({
-      url: 'http://192.168.2.128:8080/147web/getWord',
+      url: 'http://localhost:8080/getWord',
       data: {
         word: that.data.word
       },
