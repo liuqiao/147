@@ -19,3 +19,13 @@
 .usermotto {
   margin-top: 200px;
 }
+.isAddNo{
+  font-size: 40px;
+  font-weight: bold;
+  color: red;
+}
+.isAddYes{
+  font-size: 40px;
+  font-weight: bold;
+  color: green;
+}

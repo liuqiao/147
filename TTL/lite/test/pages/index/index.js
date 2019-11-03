@@ -9,21 +9,26 @@ Page({
   data: {
     list: '',
     word: '',
-    message: ''
-
+    message: '',
+    pId:'',
+    skuId:''
   },
   houduanButton1: function () {
     var that = this;
     wx.request({
-      url: 'http://104.199.196.171:8080/test_user/findAll',
+      url: 'http://localhost:8080/getSflDetail',
       method: 'GET',
+      data:{
+        pId:that.data.pId,
+        skuId:that.data.skuId
+      },
       header: {
         'content-type': 'application/json' // 默认值
       },
       success: function (res) {
         console.log(res.data)//打印到控制台
-        var list = res.data;
-        if (list == null) {
+        var isAdd = res.data.isAdd;
+        if (isAdd == null) {
           var toastText = '数据获取失败';
           wx.showToast({
             title: toastText,
@@ -32,14 +37,26 @@ Page({
           });
         } else {
           that.setData({
-            list: list
+            isAdd: isAdd
           })
         }
       }
     })
   },
   //获取输入框的内容
-  houduanTab_input: function (e) {
+  pId_input: function (e) {
+    this.setData({
+      pId: e.detail.value
+    })
+  },
+  //获取输入框的内容
+  skuId_input: function (e) {
+    this.setData({
+      skuId: e.detail.value
+    })
+  },
+  //获取输入框的内容
+  word_input: function (e) {
     this.setData({
       word: e.detail.value
     })
