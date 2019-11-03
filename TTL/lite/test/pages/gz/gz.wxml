@@ -1,0 +1,9 @@
+<!--pages/gz/gz.wxml-->
+ <view wx:for="{{products}}">
+ <view wx:if="{{item.isAdd=='1'}}">
+ <view class="isYes">{{item.pId}},{{item.skuId}},有货</view>
+ </view>
+  <view wx:else>
+ <view>{{item.pId}},{{item.skuId}},没货</view>
+ </view>
+  </view>

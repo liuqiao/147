@@ -1,0 +1,5 @@
+/* pages/gz/gz.wxss */
+.isYes{
+  color: green;
+  font-weight: bold;
+}

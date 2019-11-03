@@ -1,1 +1,8 @@
 /* pages/search/search.wxss */
+.picon image{
+  height: 200px;
+  width: 200px;
+}
+.picon{
+  text-align: center;
+}

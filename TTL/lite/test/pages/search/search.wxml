@@ -1,9 +1,12 @@
 <input type="text" class="houduanTab_input" placeholder="请输入产品名称关键字" bindinput='word_input'></input>
   <button bindtap='houduanButton2'>查询</button>
   <view wx:for="{{products}}">
-    商品名称：{{item.brandName}}
-    商品编号：{{item.productId}}
-    商品型号：{{item.currentSku.skuId}}
-    <image ></image>
-    ---------------------------
+   <view  class="picon"><image src="https://www.sephora.com{{item.heroImage}}"></image></view>
+    <view>
+    商品名称：{{item.brandName}}</view>
+    <view>商品编号：{{item.productId}}</view>
+    <view>商品型号：{{item.currentSku.skuId}}</view>
+    <view>商品价格：{{item.currentSku.listPrice}}</view>
+    <view>---------------------------
+    </view>
   </view>

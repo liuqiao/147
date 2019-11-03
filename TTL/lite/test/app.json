@@ -1,8 +1,10 @@
 {
   "pages": [
+    "pages/gz/gz",
     "pages/index/index",
     "pages/search/search",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/detail/detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -13,8 +15,12 @@
   "tabBar": {
     "list": [
       {
+        "pagePath": "pages/gz/gz",
+        "text": "关注列表"
+      },
+      {
         "pagePath": "pages/index/index",
-        "text": "首页"
+        "text": "查询产品"
       },
       {
         "pagePath": "pages/search/search",
