@@ -1,0 +1,5 @@
+微信小程序的一个样例，也可以说是一个福利型的小程序，主要功能是展示美女模特图片，目前的版本包括3个页面：
+1.首页：相册列表页面，按照类别显示美女图片的列表
+2.图片列表页：用swiper展示一个相册下的所有图片
+3.相册类别编辑页面
+Wechat APP Sample: An app shows pictures of beautiful girls
